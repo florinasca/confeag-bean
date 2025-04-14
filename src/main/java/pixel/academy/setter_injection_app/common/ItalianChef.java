@@ -11,18 +11,9 @@ public class ItalianChef implements Chef {
     }
 
     @Override
-    public String getDailyRecipe2() {
-        return "Prepare pizza with tomatoes and mozzarella!";
+    public String getDeyliRecipe() {
+        return "";
     }
 
-    @Override
-    public String getDailyRecipe3() {
-        return "Prepare ravioli!";
-    }
-
-    @Override
-    public String getDailyRecipe4() {
-        return "Prepare gnocchi alla nonna!";
-    }
 
 }
