@@ -4,6 +4,10 @@ import org.springframework.stereotype.Component;
 
 public class FrenchChef {
 
+    public FrenchChef() {
+        System.out.println("In constructor:" + getClass().getSimpleName());
+    }
+
     @Component
     public class MexicanChef implements Chef {
         @Override

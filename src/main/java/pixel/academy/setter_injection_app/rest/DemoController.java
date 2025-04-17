@@ -12,7 +12,7 @@ public class DemoController {
     private Chef myChef;
     // constructor injection
     @Autowired
-    public DemoController(Chef theChef ) {
+    public DemoController( @Qualifier("italianChef") Chef theChef ) {
         myChef = theChef;
     }
 

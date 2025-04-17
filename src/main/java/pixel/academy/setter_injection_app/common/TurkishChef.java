@@ -1,4 +1,10 @@
 package pixel.academy.setter_injection_app.common;
 
-public class TurkishChef {
+import org.springframework.http.converter.json.GsonBuilderUtils;
+
+ class TurkishChef {
+     public TurkishChef() {
+         System.out.println("In constructor:" + getClass().getSimpleName());
+     }
+
 }
