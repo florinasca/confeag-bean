@@ -9,11 +9,9 @@ import pixel.academy.setter_injection_app.common.Chef;
 @RestController
 public class DemoController {
 
-    private Chef myChef;
     // constructor injection
     @Autowired
     public DemoController( @Qualifier("italianChef") Chef theChef ) {
-        myChef = theChef;
     }
 
 
@@ -24,10 +22,7 @@ public class DemoController {
 //    }
 
 
-    @GetMapping("/dailyrecipe")
-    public String getDailyRecipe() {
-        return myChef.getDailyRecipe();
-    }
+
 
 
 
